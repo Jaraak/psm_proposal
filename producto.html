@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Dynamic meta tags: filled by JS after product load -->
+    <meta name="description" id="meta-description" content="Ficha de producto — Phone Store Maracaibo">
+    <meta property="og:title" id="og-title" content="Producto | Phone Store Maracaibo">
+    <meta property="og:description" id="og-description" content="Importación directa desde Miami.">
+    <meta property="og:image" id="og-image" content="img/logo-img-white.png">
+    <meta property="og:type" content="product">
+
+    <title id="page-title">Producto | Phone Store Maracaibo</title>
+
+    <link rel="icon" type="image/png" href="img/logo-img-black.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Design system tokens (shared) -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Product detail-specific styles -->
+    <link rel="stylesheet" href="css/producto.css">
+</head>
+
+<body class="product-body">
+
+    <!-- --- Navigation --- -->
+    <nav class="nav nav--dark" id="navbar">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="img/logo-img-white.png" alt="Phone Store Maracaibo">
+                </a>
+            </div>
+
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html#hero" class="nav__link nav__link--light">Inicio</a></li>
+                <li class="nav__item"><a href="catalogo.html" class="nav__link nav__link--light">Catálogo</a></li>
+                <li class="nav__item"><a href="index.html#features" class="nav__link nav__link--light">Ventajas</a></li>
+                <li class="nav__item"><a href="b2b-miami.html" class="nav__link nav__link--light">Miami Direct</a></li>
+            </ul>
+
+            <div class="NavUserContainer">
+                <div class="nav__user__icons">
+                    <div class="nav__shop">
+                        <a href="#" class="nav__link" data-page-pending="cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                                    <path d="M1 2h4l3 12.4a2 2 0 0 0 2 1.6h9a2 2 0 0 0 2-1.6L23 6H6" />
+                                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="nav__user">
+                        <a href="#" class="nav__link" data-page-pending="login">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M19 21a7 7 0 1 0-14 0m7-10a4 4 0 1 1 0-8a4 4 0 0 1 0 8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav__toggle nav__toggle--light" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line nav__toggle-line--light"></span>
+                <span class="nav__toggle-line nav__toggle-line--light"></span>
+                <span class="nav__toggle-line nav__toggle-line--light"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- --- Breadcrumb --- -->
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" class="breadcrumb__link">Inicio</a>
+                <span class="breadcrumb__sep">›</span>
+                <a href="catalogo.html" class="breadcrumb__link">Catálogo</a>
+                <span class="breadcrumb__sep">›</span>
+                <span class="breadcrumb__current" id="breadcrumb-name">—</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- --- Product Hero (rendered by JS) --- -->
+    <main class="product-main" id="product-main">
+
+        <!-- Loading skeleton -->
+        <div class="product-skeleton" id="product-skeleton">
+            <div class="container">
+                <div class="product-layout">
+                    <div class="skeleton skeleton--gallery"></div>
+                    <div class="product-info">
+                        <div class="skeleton skeleton--tag"></div>
+                        <div class="skeleton skeleton--title"></div>
+                        <div class="skeleton skeleton--text"></div>
+                        <div class="skeleton skeleton--text skeleton--text-short"></div>
+                        <div class="skeleton skeleton--btn"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product content: injected by JS -->
+        <div class="product-content" id="product-content" hidden></div>
+
+    </main>
+
+    <!-- --- Related Products (rendered by JS) --- -->
+    <section class="related-section" id="related-section" hidden>
+        <div class="container">
+            <h2 class="related-section__title">También te puede interesar</h2>
+            <div class="related-grid" id="related-grid"></div>
+        </div>
+    </section>
+
+    <!-- --- Back to Catalog CTA --- -->
+    <section class="back-cta">
+        <div class="container">
+            <a href="catalogo.html" class="back-cta__link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 5l-7 7 7 7" />
+                </svg>
+                <span>Volver al catálogo completo</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer class="footer footer--dark" id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="img/logo-img-white.png" alt="Phone Store Maracaibo">
+                    </div>
+                    <p class="footer__tagline">20 años importando tecnología premium desde Miami</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Productos</h4>
+                        <ul class="footer__list">
+                            <li><a href="catalogo.html" class="footer__link">iPhone Nuevos</a></li>
+                            <li><a href="catalogo.html?filter=certificado" class="footer__link">iPhone Certificados</a></li>
+                            <li><a href="catalogo.html?filter=accesorio" class="footer__link">Accesorios</a></li>
+                            <li><a href="catalogo.html?filter=repuesto" class="footer__link">Repuestos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Servicios</h4>
+                        <ul class="footer__list">
+                            <li><a href="b2b-miami.html" class="footer__link">Venta Directa Miami</a></li>
+                            <li><a href="index.html#services" class="footer__link">Trade-In</a></li>
+                            <li><a href="index.html#services" class="footer__link">Garantía</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contacto</h4>
+                        <ul class="footer__list">
+                            <li><a href="tel:+584146395496" class="footer__link">+58 414-6395496</a></li>
+                            <li><a href="mailto:admin@phonestoreca.com" class="footer__link">admin@phonestoreca.com</a></li>
+                            <li><a href="index.html#contact" class="footer__link">Maracaibo, Venezuela</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Phone Store Maracaibo. Todos los derechos reservados.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/phonestoremaracaibo_/" target="_blank"
+                        class="footer__social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts: data first, then page logic -->
+    <script src="js/script.js"></script>
+    <script src="js/products.data.js"></script>
+    <script src="js/producto.js"></script>
+
+</body>
+</html>

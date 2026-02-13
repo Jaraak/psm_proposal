@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Phone Store Maracaibo - 20 años importando iPhones y Samsung desde Miami. La mejor tecnología de alta gama en Venezuela.">
+    <meta name="keywords"
+        content="iPhone Maracaibo, Samsung Maracaibo, celulares premium Venezuela, Phone Store Maracaibo">
+    <title>Phone Store Maracaibo | 20 Años de Experiencia</title>
+
+    <!-- Open Graph: preview enriquecida al compartir por WhatsApp / redes -->
+    <meta property="og:title" content="Phone Store Maracaibo | 20 Años de Experiencia">
+    <meta property="og:description" content="iPhones y tecnología premium importada directamente desde Miami. 20 años respaldando cada venta en Maracaibo.">
+    <meta property="og:image" content="img/logo-img-black.png">
+    <meta property="og:url" content="https://phonestoreca.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo-img-black.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Modern Sans-Serif Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- --- Navigation --- -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <!-- Logo -->
+            <div class="nav__logo">
+                <img src="img/logo-img-black.png" alt="Phone Store Maracaibo">
+            </div>
+
+            <!-- Menu -->
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html#hero" class="nav__link nav__link--light">Inicio</a></li>
+                <li class="nav__item"><a href="catalogo.html" class="nav__link nav__link--light nav__link--active">Catálogo</a></li>
+                <li class="nav__item"><a href="index.html#features" class="nav__link nav__link--light">Ventajas</a></li>
+                <li class="nav__item"><a href="b2b-miami.html" class="nav__link nav__link--light">Miami Direct</a></li>
+            </ul>
+
+            <!-- User Container -->
+            <div class="NavUserContainer">
+                <!-- Search -->
+                <div class="nav__search" id="navSearch">
+                    <div class="input-search">
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                <path fill="#a8a8b3"
+                                    d="M9.539 15.23q-2.398 0-4.065-1.666Q3.808 11.899 3.808 9.5t1.666-4.065T9.539 3.77t4.064 1.666T15.269 9.5q0 1.042-.369 2.017t-.97 1.668l5.909 5.907q.14.14.15.345q.009.203-.15.363q-.16.16-.354.16t-.354-.16l-5.908-5.908q-.75.639-1.725.989t-1.96.35m0-1q1.99 0 3.361-1.37q1.37-1.37 1.37-3.361T12.9 6.14T9.54 4.77q-1.991 0-3.361 1.37T4.808 9.5t1.37 3.36t3.36 1.37" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Busca tu producto..." id="search-input" class="search-input">
+                    </div>
+                </div>
+
+                <div class="nav__user__icons">
+                    <!-- Shop Icon -->
+                    <div class="nav__shop">
+                        <a href="#" class="nav__link" data-page-pending="cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1">
+                                    <path d="M1 2h4l3 12.4a2 2 0 0 0 2 1.6h9a2 2 0 0 0 2-1.6L23 6H6" />
+                                    <circle cx="9" cy="21" r="1" />
+                                    <circle cx="20" cy="21" r="1" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- User Icon -->
+                    <div class="nav__user" id="navUser">
+                        <a href="#" class="nav__link" data-page-pending="login">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M19 21a7 7 0 1 0-14 0m7-10a4 4 0 1 1 0-8a4 4 0 0 1 0 8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- --- Hero Section --- -->
+    <section class="hero" id="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <span class="hero__badge" data-aos="fade-down">
+                    <div class="hero__badge_text">
+                        <div class="icon-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#000"
+                                    d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.381 0-2.5-1.119-2.5-2.5S10.619 6.5 12 6.5s2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z" />
+                            </svg>
+                        </div>
+                        <p class="badge_text">Hotel Tibisay Locales 18-20</p>
+                    </div>
+                </span>
+
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="100">
+                    La única tienda de smartphones con 20 años en Maracaibo.
+                </h1>
+
+                <p class="hero__description" data-aos="fade-up" data-aos-delay="200">
+                    iPhone, Samsung, y todos sus productos. Nuevos, reacondicionados
+                    o trade-in. Dos décadas de experiencia respaldan cada venta.
+                </p>
+
+                <div class="hero__cta" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#products" class="btn btn--primary">
+                        <p>Explorar Catálogo</p>
+                        <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="b2b-miami.html" class="btn btn--secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                            <g fill="none">
+                                <path d="M4 8h16v14H4z" />
+                                <path stroke="#000" stroke-linecap="square" stroke-width="1"
+                                    d="M15.5 11V5.5a3.5 3.5 0 1 0-7 0V11M4 8h16v14H4z" />
+                            </g>
+                        </svg>
+                        <p>Venta Directa Miami</p>
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="hero__stats" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat">
+                        <div class="stat__value">20+</div>
+                        <div class="stat__label">Años</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__value">10K+</div>
+                        <div class="stat__label">Clientes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__value">100%</div>
+                        <div class="stat__label">Garantía</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Visual -->
+            <div class="hero__visual" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero__device-card">
+                    <div class="device-card__glow"></div>
+                    <div class="device-card__content">
+                        <div class="device-card__image">
+                            <img src="img/phone/hero-section-2..png" alt="hero-image-section">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator" data-scroll-target="#products">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </div>
+
+    <!-- --- Products Showcase --- -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">
+                    <div class="section-header__subtitle_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#4c4c4c"
+                                d="M10.144 6.628c.786-1.961 1.18-2.942 1.856-2.942s1.07.98 1.856 2.942l.037.09c.444 1.109.666 1.663 1.12 2c.452.336 1.047.39 2.236.496l.214.019c1.946.174 2.92.261 3.127.88c.209.62-.514 1.277-1.96 2.591l-.481.44c-.732.665-1.098.998-1.268 1.434a2 2 0 0 0-.08.25c-.111.454-.004.937.21 1.902l.067.3c.393 1.775.59 2.662.247 3.045a1 1 0 0 1-.481.296c-.496.136-1.2-.438-2.61-1.586c-.925-.754-1.388-1.131-1.919-1.216a2 2 0 0 0-.63 0c-.532.085-.994.462-1.92 1.216c-1.408 1.148-2.113 1.722-2.609 1.586a1 1 0 0 1-.48-.296c-.344-.383-.147-1.27.246-3.044l.067-.301c.214-.966.321-1.448.21-1.903a2 2 0 0 0-.08-.25c-.17-.435-.536-.768-1.268-1.434l-.482-.439c-1.445-1.314-2.168-1.972-1.96-2.59c.209-.62 1.182-.707 3.128-.881l.214-.02c1.19-.106 1.784-.159 2.237-.496s.675-.89 1.12-1.998z"
+                                stroke-width="1" />
+                        </svg>
+                        <p>Destacados del Mes</p>
+                    </div>
+                </span>
+                <h2 class="section-header__title">Nuevos Productos</h2>
+
+                <!-- Carousel Navigation: debajo del título -->
+                <div class="carousel-nav">
+                    <button class="carousel-btn carousel-btn--prev" aria-label="Anterior">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <button class="carousel-btn carousel-btn--next" aria-label="Siguiente">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18l6-6-6-6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <!-- Product Card 1: iPhone 17 Pro Max -->
+                    <div class="product-card product-card--featured">
+                        <div class="product-card__badge">Nuevo</div>
+                        <div class="product-card__image">
+                            <div class="product-card__glow"></div>
+                            <img src="img/phone/product/iphone_17/17_pro_max_png/17promax.png" alt="iPhone 17 Pro Max">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">iPhone 17 Pro Max</h3>
+                            <p class="product-card__description">Lo último en tecnología Apple. Chip A19 Pro.</p>
+                            <div class="product-card__features">
+                                <span class="feature-tag">A19 Pro</span>
+                                <span class="feature-tag">Titanio</span>
+                                <span class="feature-tag">256GB</span>
+                            </div>
+                            <a href="https://wa.me/584146395496?text=Hola, me interesa el iPhone 17 Pro Max"
+                                class="btn btn--primary btn--small">Consultar</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2: iPhone 17 -->
+                    <div class="product-card">
+                        <div class="product-card__badge product-card__badge--secondary">Nuevo</div>
+                        <div class="product-card__image">
+                            <div class="product-card__glow"></div>
+                            <img src="img/phone/product/iphone_17/17_plus/iphone-17.png" alt="iPhone 17">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">iPhone 17</h3>
+                            <p class="product-card__description">Pantalla grande, rendimiento superior.</p>
+                            <div class="product-card__features">
+                                <span class="feature-tag">A19</span>
+                                <span class="feature-tag">6.7"</span>
+                                <span class="feature-tag">128GB</span>
+                            </div>
+                            <a href="https://wa.me/584146395496?text=Hola, me interesa el iPhone 17 Plus"
+                                class="btn btn--primary btn--small">Consultar</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3: iPhone 16 Pro Max -->
+                    <div class="product-card">
+                        <div class="product-card__badge product-card__badge--green">Disponible</div>
+                        <div class="product-card__image">
+                            <div class="product-card__glow"></div>
+                            <img src="img/phone/product/iphone_16/16_pro_max/16_pro_max.png" alt="iPhone 16 Pro Max">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">iPhone 16 Pro Max</h3>
+                            <p class="product-card__description">Potencia equilibrada para el día a día.</p>
+                            <div class="product-card__features">
+                                <span class="feature-tag">A18</span>
+                                <span class="feature-tag">6.1"</span>
+                                <span class="feature-tag">128GB</span>
+                            </div>
+                            <a href="https://wa.me/584146395496?text=Hola, me interesa el iPhone 16"
+                                class="btn btn--primary btn--small">Consultar</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4: iPhone 16 -->
+                    <div class="product-card">
+                        <div class="product-card__badge product-card__badge--green">Disponible</div>
+                        <div class="product-card__image">
+                            <div class="product-card__glow"></div>
+                            <img src="img/phone/product/iphone_16/png/iphone_16_pink.png" alt="iPhone 16">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">iPhone 16</h3>
+                            <p class="product-card__description">Batería extendida, pantalla inmersiva.</p>
+                            <div class="product-card__features">
+                                <span class="feature-tag">A18</span>
+                                <span class="feature-tag">6.7"</span>
+                                <span class="feature-tag">256GB</span>
+                            </div>
+                            <a href="https://wa.me/584146395496?text=Hola, me interesa el iPhone 16"
+                                class="btn btn--primary btn--small">Consultar</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 5: iPhone 15 Pro Max  -->
+                    <div class="product-card product-card--featured">
+                        <div class="product-card__badge">Nuevo</div>
+                        <div class="product-card__image">
+                            <div class="product-card__glow"></div>
+                            <img src="img/phone/product/iphone_15/15_pro_max/15_pro_max.png" alt="iPhone 15 Pro Max">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">iPhone 15 Pro Max</h3>
+                            <p class="product-card__description">Titanio, ProMotion 120Hz y Action Button.</p>
+                            <div class="product-card__features">
+                                <span class="feature-tag">A17 Pro</span>
+                                <span class="feature-tag">Titanio</span>
+                                <span class="feature-tag">256GB</span>
+                            </div>
+                            <a href="https://wa.me/584146395496?text=Hola, me interesa el iPhone 15 Pro Max"
+                                class="btn btn--primary btn--small">Consultar</a>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 6: iPhone 15  -->
+                    <div class="product-card">
+                        <div class="product-card__badge product-card__badge--secondary">Nuevo</div>
+                        <div class="product-card__image">
+                            <div class="product-card__glow"></div>
+                            <img src="img/phone/product/iphone_15/iphone_15/iphone_15_cream_1.png" alt="iPhone 15">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">iPhone 15</h3>
+                            <p class="product-card__description">Dynamic Island, USB-C y cámara mejorada.</p>
+                            <div class="product-card__features">
+                                <span class="feature-tag">A16 Bionic</span>
+                                <span class="feature-tag">6.1"</span>
+                                <span class="feature-tag">128GB</span>
+                            </div>
+                            <a href="https://wa.me/584146395496?text=Hola, me interesa el iPhone 15"
+                                class="btn btn--primary btn--small">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SVG Gradients -->
+            <svg width="0" height="0" style="position: absolute;">
+                <defs>
+                    <linearGradient id="iphone17proGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#000000;stop-opacity:0.1" />
+                        <stop offset="100%" style="stop-color:#5c5c5c;stop-opacity:0.1" />
+                    </linearGradient>
+                    <linearGradient id="iphone17plusGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#000000;stop-opacity:0.08" />
+                        <stop offset="100%" style="stop-color:#737373;stop-opacity:0.08" />
+                    </linearGradient>
+                    <linearGradient id="iphone16Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#000000;stop-opacity:0.06" />
+                        <stop offset="100%" style="stop-color:#8c8c8c;stop-opacity:0.06" />
+                    </linearGradient>
+                    <linearGradient id="iphone16plusGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#000000;stop-opacity:0.05" />
+                        <stop offset="100%" style="stop-color:#a3a3a3;stop-opacity:0.05" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator" data-scroll-target="#accessories">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </div>
+
+    <!-- --- Categories Available Section --- -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">
+                    <div class="section-header__subtitle_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                            <path fill="#4c4c4c" fill-rule="evenodd"
+                                d="M8 7V6a4 4 0 1 1 8 0v1h3c.552 0 1 .449 1 1.007v12.001c0 1.1-.895 1.992-1.994 1.992H5.994A1.994 1.994 0 0 1 4 20.008v-12C4 7.45 4.445 7 5 7zm1.2 0h5.6V6a2.8 2.8 0 0 0-5.6 0zM8 8.2H5.2v11.808c0 .436.356.792.794.792h12.012a.794.794 0 0 0 .794-.792V8.2H16V11h-1.2V8.2H9.2V11H8z" />
+                        </svg>
+                        <p>Explora Nuestro Catálogo</p>
+                    </div>
+                </span>
+                <h2 class="section-header__title">Categorías Disponibles</h2>
+            </div>
+
+            <div class="categories__grid">
+                <!-- Category 1: iPhone por Serie -->
+                <a href="#products" class="category-card__link">
+                <div class="category-card" data-aos="fade-up">
+                    <div class="category-card__icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="5" y="2" width="14" height="20" rx="2" />
+                            <path d="M12 18h.01" />
+                        </svg>
+                    </div>
+                    <h3 class="category-card__title">iPhone por Serie</h3>
+                    <p class="category-card__description">Serie 11, 12, 13, 14, 15, 16 y 17</p>
+                </div>
+                </a>
+
+                <!-- Category 2: Audio -->
+                <a href="#accessories" class="category-card__link">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card__icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                            <path
+                                d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                        </svg>
+                    </div>
+                    <h3 class="category-card__title">Audio</h3>
+                    <p class="category-card__description">AirPods, SkeiPods y Audífonos</p>
+                </div>
+                </a>
+
+                <!-- Category 3: Gadgets -->
+                <a href="#accessories" class="category-card__link">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card__icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 3l-4 4-4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="category-card__title">Gadgets</h3>
+                    <p class="category-card__description">DJI Drones, Power Banks, Computación</p>
+                </div>
+                </a>
+
+                <!-- Category 4: PlayStation -->
+                <a href="#accessories" class="category-card__link">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card__icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="6" width="20" height="12" rx="2" />
+                            <circle cx="6" cy="12" r="2" />
+                            <path d="M18 10h2" />
+                            <path d="M18 14h2" />
+                        </svg>
+                    </div>
+                    <h3 class="category-card__title">PlayStation</h3>
+                    <p class="category-card__description">Consolas y Accesorios</p>
+                </div>
+                </a>
+
+                <!-- Category 5: Soporte Técnico -->
+                <a href="#services" class="category-card__link">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-card__icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                        </svg>
+                    </div>
+                    <h3 class="category-card__title">PSM Service</h3>
+                    <p class="category-card__description">Pantallas, Baterías, Cámaras</p>
+                </div>
+                </a>
+
+                <!-- Category 6: Cases -->
+                <a href="#accessories" class="category-card__link">
+                <div class="category-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-card__icon">
+                        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <rect x="9" y="9" width="6" height="6" />
+                        </svg>
+                    </div>
+                    <h3 class="category-card__title">Protección</h3>
+                    <p class="category-card__description">Cases para todos los iPhone</p>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Accessories & Parts Section --- -->
+    <section class="accessories" id="accessories">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">
+                    <div class="section-header__subtitle_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#4c4c4c" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5">
+                                <path
+                                    d="m10.05 10.607l-7.07 7.07a2 2 0 0 0 0 2.83v0a2 2 0 0 0 2.828 0l7.07-7.072m4.315.365l3.878 3.878a2 2 0 0 1 0 2.828v0a2 2 0 0 1-2.828 0l-6.209-6.208M6.733 5.904L4.61 6.61L2.49 3.075l1.414-1.414L7.44 3.782zm0 0l2.83 2.83" />
+                                <path
+                                    d="M10.05 10.607c-.844-2.153-.679-4.978 1.061-6.718s4.95-2.121 6.717-1.06l-3.04 3.04l-.283 3.111l3.111-.282l3.04-3.041c1.062 1.768.68 4.978-1.06 6.717c-1.74 1.74-4.564 1.905-6.717 1.061" />
+                            </g>
+                        </svg>
+                        <span>
+                            Accesorios y Repuestos
+                        </span>
+                    </div>
+                </span>
+                <h2 class="section-header__title">Renueva, protege y potencia: <br> Todo en un solo lugar</h2>
+            </div>
+
+            <div class="accessories__grid">
+                <!-- Accessory 1: Cargador Apple -->
+                <div class="accessory-card" data-aos="fade-up">
+                    <div class="accessory-card__icon">
+                        <!-- Imagen del producto -->
+                        <div class="accessory-card__image__container">
+                            <img src="img/accesorys/cargador40w/PNG/40w.png" alt="Cargador Apple 40W">
+                        </div>
+                    </div>
+                    <h3 class="accessory-card__title">Cargador Apple 40W</h3>
+                    <p class="accessory-card__description">Dinámico hasta 60W. Original Apple.</p>
+                    <div class="div-icon"></div>
+                    <div class="accessory-card__bt">
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa el Cargador Apple 40W"
+                            class="btn btn--primary btn--small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Accessory 2: Cable Anker -->
+                <div class="accessory-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="accessory-card__icon">
+                        <!-- Imagen del producto -->
+                        <div class="accessory-card__image__container">
+                            <img src="img/accesorys/cableTypeC/PNG/cabletypec.png" alt="Cable Anker USB-C"
+                                class="product_cable_anker_usb-c">
+                        </div>
+                    </div>
+                    <h3 class="accessory-card__title">Cable Anker USB-C</h3>
+                    <p class="accessory-card__description">USB-C a Lightning, 1 metro, nylon trenzado.</p>
+                    <div class="div-icon"></div>
+                    <div class="accessory-card__bt">
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa el Cable Anker USB-C"
+                            class="btn btn--primary btn--small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Accessory 3: AirPods Serie -->
+                <div class="accessory-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="accessory-card__icon">
+                        <!-- Imagen del producto -->
+                        <div class="accessory-card__image__container">
+                            <img src="img/accesorys/airpods/serie 4/PNG/airpods-serie4.png" alt="AirPods Serie 4">
+                        </div>
+                    </div>
+                    <h3 class="accessory-card__title">AirPods Serie</h3>
+                    <p class="accessory-card__description">Diseño abierto con cancelación de ruido.</p>
+                    <div class="div-icon"></div>
+                    <div class="accessory-card__bt">
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa los AirPods"
+                            class="btn btn--primary btn--small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Accessory 4: Cámara Frontal -->
+                <div class="accessory-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accessory-card__icon">
+                        <!-- Imagen del producto -->
+                        <div class="accessory-card__image__container">
+                            <img src="img/accesorys/camara_iphone_pro_max/iphone_15_pro_max/PNG/camara-accesory-iphone-15-pro-max.png"
+                                alt="Cámara Frontal">
+                        </div>
+                    </div>
+                    <h3 class="accessory-card__title">Cámara Frontal: Serie 13, 14, 15</h3>
+                    <p class="accessory-card__description">Original. Incluye instalación.</p>
+                    <div class="div-icon"></div>
+                    <div class="accessory-card__bt">
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa la Cámara Frontal iPhone"
+                            class="btn btn--primary btn--small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Accessory 5: Cámara Trasera -->
+                <div class="accessory-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="accessory-card__icon">
+                        <!-- Imagen del producto -->
+                        <div class="accessory-card__image__container">
+                            <img src="img/accesorys/camara_iphone_pro_max/trasera-iphone_14/PNG/camara-trasera_iphone14.png"
+                                alt="Cámara Trasera: Serie 14, 15, 16">
+                        </div>
+                    </div>
+                    <h3 class="accessory-card__title">Cámara Trasera: Serie 14, 15, 16</h3>
+                    <p class="accessory-card__description">Reemplazo original con instalación.</p>
+                    <div class="div-icon"></div>
+                    <div class="accessory-card__bt">
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa la Cámara Trasera iPhone"
+                            class="btn btn--primary btn--small">Consultar</a>
+                    </div>
+                </div>
+
+                <!-- Accessory 6: Baterias iPhone -->
+                <div class="accessory-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="accessory-card__icon">
+                        <!-- Imagen del producto -->
+                        <div class="accessory-card__image__container">
+                            <img src="img/accesorys/bateries/PNG/bateries-iphone-15-pro-max.png"
+                                alt="Baterías: Serie 14, 15, 16">
+                        </div>
+                    </div>
+                    <h3 class="accessory-card__title">Baterías: Serie 14, 15, 16</h3>
+                    <p class="accessory-card__description">Reemplazo original con instalación.</p>
+                    <div class="div-icon"></div>
+                    <div class="accessory-card__bt">
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa el servicio de Batería iPhone"
+                            class="btn btn--primary btn--small">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Features: Ventajas Exclusivas --- -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">¿Por qué elegirnos?</span>
+                <h2 class="section-header__title">Ventajas Exclusivas</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Feature 1: Miami Office -->
+                <div class="bento-card" data-aos="fade-up">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">Oficina en Miami</h3>
+                    <p class="bento-card__description">Importación directa desde nuestra <br> oficina en 5585 NW 72nd
+                        Ave,
+                        Miami, FL. Sin intermediarios.</p>
+                    <div class="bento-card__bg-pattern"></div>
+                </div>
+
+                <!-- Feature 2: 20 Years -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 2v20M17 12H3M19 18v4M13 4v4M19 10V6" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">20 Años</h3>
+                    <p class="bento-card__description">Dos décadas de experiencia en tecnología premium.</p>
+                </div>
+
+                <!-- Feature 3: Warranty -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">Garantía Total</h3>
+                    <p class="bento-card__description">60 días en equipos nuevos y usados certificados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator" data-scroll-target="#services">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </div>
+
+    <!-- --- Services: Payment & Shipping --- -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">
+                    <div class="section-header__subtitle_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 20 20">
+                            <path fill="#4c4c4c"
+                                d="M9 14a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zM7 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM6 4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1z" />
+                        </svg>
+                        <p>Beneficios Exclusivos</p>
+                    </div>
+                </span>
+                <h2 class="section-header__title">Compra fácil y seguro.</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Service 1: B2B Miami -->
+                <div class="bento-card bento-card--large bento-card--accent" data-aos="fade-up">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">B2B Miami</h3>
+                    <p class="bento-card__description">Área dedicada para emprendedores. Compra al por mayor desde Miami
+                        para impulsar tu negocio. Precios especiales y asesoría personalizada.</p>
+                    <div class="bento-card__bg-pattern"></div>
+                </div>
+
+                <!-- Service 2: Payment Methods -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                            <line x1="1" y1="10" x2="23" y2="10" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">Métodos de Pago</h3>
+                    <p class="bento-card__description">Zelle, Binance, Efectivo. Facilidades de pago disponibles.</p>
+                    <div class="payment-icons">
+                        <span class="payment-badge">Zelle</span>
+                        <span class="payment-badge">Binance</span>
+                        <span class="payment-badge">Cash</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Shipping -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13" />
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                            <circle cx="5.5" cy="18.5" r="2.5" />
+                            <circle cx="18.5" cy="18.5" r="2.5" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">Envío Nacional</h3>
+                    <p class="bento-card__description">Gratis por Zoom y Tealca. Delivery local Maracaibo.</p>
+                </div>
+
+                <!-- Service 4: Trade-In -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bento-card__icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="23 4 23 10 17 10" />
+                            <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+                        </svg>
+                    </div>
+                    <h3 class="bento-card__title">Trade-In Program</h3>
+                    <p class="bento-card__description">Cambia tu dispositivo por uno nuevo. Valoramos tu equipo al mejor
+                        precio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator" data-scroll-target="#accessories">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </div>
+
+    <!-- --- Miami Direct Section --- -->
+    <section class="miami-section" id="miami">
+        <div class="container">
+            <div class="miami-content">
+                <div class="miami-content__text" data-aos="fade-right">
+                    <span class="section-header__subtitle">
+                        <div class="section-header__subtitle_container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                <path fill="#4c4c4c"
+                                    d="M17 6a1 1 0 1 1 0-2a1 1 0 0 1 0 2m0 2a3 3 0 1 0 0-6a3 3 0 0 0 0 6M7 3a4 4 0 0 0-4 4v2h2V7a2 2 0 0 1 2-2h3V3zm10 18a4 4 0 0 0 4-4v-2h-2v2a2 2 0 0 1-2 2h-3v2zm-9-8a1 1 0 1 0-2 0a1 1 0 0 0 2 0m2 0a3 3 0 1 1-6 0a3 3 0 0 1 6 0m7-2a2 2 0 0 0-2 2h-2a4 4 0 0 1 8 0h-2a2 2 0 0 0-2-2M5 21a2 2 0 1 1 4 0h2a4 4 0 0 0-8 0z" />
+                            </svg>
+                            <p>Venta Directa Miami</p>
+                        </div>
+                    </span>
+                    <h2 class="section-header__title">Importa Directo desde Florida</h2>
+                    <p class="miami-content__description">
+                        Accede a precios especiales comprando directamente desde nuestra oficina en Miami.
+                        Te coordinamos con couriers de confianza como AMERICARGO y MRW USA.
+                    </p>
+
+                    <div class="miami-benefits">
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Precios competitivos directos de Miami</span>
+                        </div>
+                        <!-- Divisor -->
+                        <div class="benefit-item-divisor"></div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Coordinación con couriers especializados</span>
+                        </div>
+                        <!-- Divisor -->
+                        <div class="benefit-item-divisor"></div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span>Productos sellados de fábrica</span>
+                        </div>
+                        <!-- Divisor -->
+                        <div class="benefit-item-divisor"></div>
+                    </div>
+
+                    <div class="benefit-item-bt">
+                        <a href="#products" class="btn btn--primary btn--large">
+                            <p>Solicitar Cotización Miami</p>
+                            <svg class=" btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+
+                        <a href="#products" class="btn btn--secondary btn--large">
+                            <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                viewBox="0 0 24 24">
+                                <path fill="#4c4c4c" fill-rule="evenodd"
+                                    d="M8 7V6a4 4 0 1 1 8 0v1h3c.552 0 1 .449 1 1.007v12.001c0 1.1-.895 1.992-1.994 1.992H5.994A1.994 1.994 0 0 1 4 20.008v-12C4 7.45 4.445 7 5 7zm1.2 0h5.6V6a2.8 2.8 0 0 0-5.6 0zM8 8.2H5.2v11.808c0 .436.356.792.794.792h12.012a.794.794 0 0 0 .794-.792V8.2H16V11h-1.2V8.2H9.2V11H8z" />
+                            </svg>
+                            <p>Explorar Catálogo</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="miami-content__visual" data-aos="fade-left">
+                    <div class="miami-card glass-card">
+                        <div class="miami-card__header">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            <span>Oficina Miami</span>
+                        </div>
+                        <div class="miami-card__address">
+                            <p>5585 NW 72nd Ave</p>
+                            <p>Miami, FL 33195</p>
+                        </div>
+                        <div class="miami-card__contact">
+                            <div class="contact-item">
+                                <span class="contact-label">USA:</span>
+                                <span class="contact-value">+1 (786) 685-1428</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">VEN:</span>
+                                <span class="contact-value">+58 414-6820850</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator" data-scroll-target="#contact">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </div>
+
+    <!-- --- Contact Section --- -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-header__subtitle">
+                    <div class="section-header__subtitle_container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#4c4c4c" stroke-linecap="round" stroke-width="1.5">
+                                <path stroke-linejoin="round"
+                                    d="M12 22c-4.007 0-6.01 0-7.255-1.318S3.5 17.242 3.5 13s0-6.364 1.245-7.682S7.993 4 12 4s6.01 0 7.255 1.318S20.5 8.758 20.5 13s0 6.364-1.245 7.682S16.007 22 12 22" />
+                                <path d="M8 4V2m8 2V2" />
+                                <path stroke-linejoin="round"
+                                    d="M14.018 9.493a2 2 0 1 1-4 0a2 2 0 0 1 4 0m-5.955 7.223c1.058-1.63 2.739-2.24 3.955-2.239s2.848.61 3.906 2.24c.068.105.087.234.025.344c-.247.439-1.016 1.31-1.57 1.369c-.638.067-2.307.077-2.36.077s-1.772-.01-2.41-.077c-.556-.06-1.324-.93-1.572-1.37c-.061-.109-.042-.238.026-.344" />
+                            </g>
+                        </svg>
+                        <p>Contáctanos</p>
+                    </div>
+                </span>
+                <h2 class="section-header__title">Visítanos o Escríbenos</h2>
+            </div>
+
+            <!-- Contact Grid: Map Location: Venezuela -->
+            <div class="contact-grid">
+                <div class="store__location glass-card" data-aos="fade-up">
+                    <div class="store__location__container">
+                        <!-- Store Location Información -->
+                        <div class="store-location__info">
+                            <!-- Store Location -->
+                            <span class="section-header__subtitle location-bottom-space">
+                                <div class="section-header__subtitle_container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill="#4c4c4c"
+                                            d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.381 0-2.5-1.119-2.5-2.5S10.619 6.5 12 6.5s2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <p>Venezuela</p>
+                                </div>
+                            </span>
+
+                            <!-- Store Location Information -->
+                            <h3 class="loction__info__title">Tienda Maracaibo</h3>
+                            <p class="location__info__address">Hotel Tibisay del Lago Locales 18-20 <br>Maracaibo, Venezuela.
+                            </p>
+                            <p class="location__info__hours">Lun-Sáb: 9:00am - 6:00pm<br>Domingo: Cerrado</p>
+                            <!-- Store BTNs-->
+                            <div class="location__info__buttons">
+                                <a href="https://wa.me/584146820850" target="_blank"
+                                    class="btn btn--primary location__info__buttons_grid btn-icon">
+                                    <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                    </svg>
+                                    <p>WhatsApp</p>
+                                </a>
+                                <a href="https://www.instagram.com/phone_store_maracaibo/" target="_blank"
+                                    class="btn btn--secondary location__info__buttons_grid btn-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                        <path fill="#000"
+                                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                                    </svg>
+                                    <p>Instagram</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Store Location Mapa -->
+                        <div class="store__location__map__container">
+                            <div class="store__location__map" id="map-vzla">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.678866085277!2d-71.59650962616854!3d10.68201546093054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998b65225f74b%3A0x6674b37e368930fe!2sTibisay%20Hotel%20del%20Lago%2C%20Avenida%20El%20Milagro%2C%20Maracaibo%2C%20Zulia!5e0!3m2!1ses!2sve!4v1770846091303!5m2!1ses!2sve"
+                                    width="100%" height="400" style="border-radius:50px; border:none; display:block;"
+                                    aria-hidden="false" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Grid: Map Location: Miami -->
+            <div class="contact-grid">
+                <div class="store__location glass-card" data-aos="fade-up">
+                    <div class="store__location__container">
+                        <!-- Store Location Información -->
+                        <div class="store-location__info">
+                            <!-- Store Location -->
+                            <span class="section-header__subtitle location-bottom-space">
+                                <div class="section-header__subtitle_container">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill="#4c4c4c"
+                                            d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.381 0-2.5-1.119-2.5-2.5S10.619 6.5 12 6.5s2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z" />
+                                    </svg>
+                                    <p>Estados Unidos</p>
+                                </div>
+                            </span>
+
+                            <!-- Store Location Information -->
+                            <h3 class="loction__info__title">Tienda Miami</h3>
+                            <p class="location__info__address">5585 NW 72nd Ave, Miami, FL 33195.</p>
+                            <p class="location__info__hours">Lun-Sáb: 8:00am - 5:00pm<br>Domingo: Cerrado</p>
+                            <!-- Store BTNs-->
+                            <div class="location__info__buttons">
+                                <a href="https://wa.me/584146820850" target="_blank"
+                                    class="btn btn--primary location__info__buttons_grid btn-icon">
+                                    <svg width="21" height="21" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                    </svg>
+                                    <p>WhatsApp</p>
+                                </a>
+                                <a href="https://www.instagram.com/phone_store_maracaibo/" target="_blank"
+                                    class="btn btn--secondary location__info__buttons_grid btn-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24">
+                                        <path fill="#000"
+                                            d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                                    </svg>
+                                    <p>Instagram</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Store Location Mapa -->
+                        <div class="store__location__map__container">
+                            <div class="store__location__map" id="map-miami">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.376431443963!2d-80.3107667!3d25.8241385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9ba300519d539%3A0x789bde881a850cb5!2s5585%20NW%2072nd%20Ave%2C%20Miami%2C%20FL%2033195!5e0!3m2!1ses!2sus!4v1770919578108!5m2!1ses!2sus"
+                                    width="100%" height="400" style="border-radius: 50px; border: none; display: block;"
+                                    allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info (Phone, Email) -->
+            <div class="contact-grid-2-columns">
+                <!-- Phone -->
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Teléfono</h3>
+                    <p class="contact-card__info">
+                        <a href="tel:+584146395496" class="contact-link">+58 414-6395496</a>
+                    </p>
+                    <p class="contact-card__label">WhatsApp disponible</p>
+                    <a href="tel:+584146395496" class="btn btn--primary btn--small">
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Email</h3>
+                    <p class="contact-card__info">
+                        <a href="mailto:admin@phonestoreca.com" class="contact-link">admin@phonestoreca.com</a>
+                    </p>
+                    <p class="contact-card__label">Respuesta en 24h</p>
+                    <a href="mailto:admin@phonestoreca.com" class="btn btn--primary btn--small">
+                        <p>Email</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="hero__scroll" data-aos="fade-up" data-aos-delay="500">
+        <div class="scroll-indicator" data-scroll-target="#footer">
+            <span class="scroll-indicator__text">Scroll</span>
+            <div class="scroll-indicator__line"></div>
+        </div>
+    </div>
+
+
+    <!-- CTA Banner -->
+    <section class="cta-banner-container" id="cta-banner-container">
+        <div class="cta-banner" data-aos="fade-up" data-aos-delay="300">
+            <div class="cta-banner__image">
+                <img src="img/phone/bt-banner-3.png" alt="iPhone 16 Pro Max" class="cta-banner__image_img">
+            </div>
+
+            <span class="section-header__subtitle">
+                <div class="section-header__subtitle_container">
+                    <p>¿Cúal prefieres?</p>
+                </div>
+            </span>
+            <h3 class="cta-banner__title">¿Listo para estrenar tu nuevo smartphone?</h3>
+            <p class="cta-banner__text">Visítanos en nuestra tienda física o escríbenos por WhatsApp. Nuestro equipo
+                te ayudará a elegir <br> el dispositivo perfecto según tus necesidades.</p>
+            <div class="cta-banner__buttons">
+                <a href="https://wa.me/584146395496" target="_blank" class="btn btn--primary btn--large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    <span>WhatsApp</span>
+                </a>
+                <a href="#products" class="btn btn--secondary btn--large">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                        viewBox="0 0 24 24">
+                        <path fill="#4c4c4c" fill-rule="evenodd"
+                            d="M8 7V6a4 4 0 1 1 8 0v1h3c.552 0 1 .449 1 1.007v12.001c0 1.1-.895 1.992-1.994 1.992H5.994A1.994 1.994 0 0 1 4 20.008v-12C4 7.45 4.445 7 5 7zm1.2 0h5.6V6a2.8 2.8 0 0 0-5.6 0zM8 8.2H5.2v11.808c0 .436.356.792.794.792h12.012a.794.794 0 0 0 .794-.792V8.2H16V11h-1.2V8.2H9.2V11H8z" />
+                    </svg>
+                    <p>Explorar Catálogo</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="img/logo-img-black.png" alt="Phone Store Maracaibo">
+                    </div>
+                    <p class="footer__tagline">20 años importando tecnología premium desde Miami</p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Productos</h4>
+                        <ul class="footer__list">
+                            <li><a href="#products" class="footer__link">iPhone Nuevos</a></li>
+                            <li><a href="#products" class="footer__link">iPhone Certificados</a></li>
+                            <li><a href="#products" class="footer__link">Samsung Galaxy</a></li>
+                            <li><a href="#accessories" class="footer__link">Accesorios</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Servicios</h4>
+                        <ul class="footer__list">
+                            <li><a href="#miami" class="footer__link">Venta Directa Miami</a></li>
+                            <li><a href="#services" class="footer__link">Trade-In</a></li>
+                            <li><a href="#services" class="footer__link">Garantía</a></li>
+                            <li><a href="#services" class="footer__link">Envíos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contacto</h4>
+                        <ul class="footer__list">
+                            <li><a href="tel:+584146395496" class="footer__link">+58 414-6395496</a></li>
+                            <li><a href="mailto:admin@phonestoreca.com" class="footer__link">admin@phonestoreca.com</a>
+                            </li>
+                            <li><a href="#contact" class="footer__link">Maracaibo, Venezuela</a></li>
+                            <li><a href="#contact" class="footer__link">Miami, FL 33195</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Phone Store Maracaibo. Todos los derechos reservados.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/phonestoremaracaibo_/" target="_blank"
+                        class="footer__social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/phonestoremaracaibo" target="_blank" class="footer__social-link"
+                        aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+    <!-- Simple AOS (Animate On Scroll) Implementation -->
+    <script>
+        // Simple intersection observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aos-animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-aos]').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

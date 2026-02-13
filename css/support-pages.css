@@ -1,0 +1,344 @@
+/*
+   Phone Store Maracaibo — Support Pages Styles
+   Shared module for: 404.html, cart.html, login.html
+   Theme: varies per page — see page-specific overrides below
+   Inherits all design tokens from styles.css
+*/
+
+/* --- Shared: Full-screen centered layout --- */
+.support-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.support-page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-3xl) var(--space-xl);
+    text-align: center;
+}
+
+.support-page__inner {
+    max-width: 520px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+}
+
+/* --- Shared: Nav minimal --- */
+.nav--support {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--space-lg) var(--space-xl);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: var(--z-fixed);
+}
+
+.nav--support .nav__logo img {
+    height: 32px;
+    width: auto;
+}
+
+.nav--support-back {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+}
+
+.nav--support-back:hover {
+    opacity: 0.6;
+}
+
+/* ============================================
+   404 PAGE — Negro total, humor seco
+   ============================================ */
+
+.body--404 {
+    background: #000000;
+    color: #ffffff;
+}
+
+.support-page--404 {
+    padding-top: 80px;
+}
+
+.error-code {
+    font-size: clamp(6rem, 20vw, 14rem);
+    font-weight: var(--font-weight-black);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+
+    /* The "404" fills as a visual statement, then partially fades — intentional */
+    opacity: 0;
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.error-label {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+
+    opacity: 0;
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.25s forwards;
+}
+
+.error-title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
+    color: #ffffff;
+
+    opacity: 0;
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.35s forwards;
+}
+
+.error-description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: rgba(255, 255, 255, 0.45);
+    max-width: 380px;
+
+    opacity: 0;
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.45s forwards;
+}
+
+.error-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+
+    opacity: 0;
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.55s forwards;
+}
+
+/* Inverted button for dark background */
+.btn--white {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 14px var(--space-2xl);
+    border-radius: var(--radius-full);
+    background: #ffffff;
+    color: #000000;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    text-decoration: none;
+    transition: opacity var(--transition-fast), transform var(--transition-fast);
+    font-family: var(--font-family);
+    border: none;
+    cursor: pointer;
+}
+
+.btn--white:hover {
+    opacity: 0.88;
+    transform: translateY(-2px);
+}
+
+.btn--ghost-white {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 14px var(--space-2xl);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
+.btn--ghost-white:hover {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Nav back link on 404 */
+.nav--support-back--light {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   COMING SOON PAGES — cart.html, login.html
+   ============================================ */
+
+.body--coming-soon {
+    background: #0a0a0a;
+    color: #ffffff;
+}
+
+/* Ambient radial behind the content */
+.coming-soon-glow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255,255,255,0.025) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.support-page--coming-soon {
+    position: relative;
+    z-index: 1;
+    padding-top: 80px;
+}
+
+/* Page icon */
+.coming-soon-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: var(--radius-2xl);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s forwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.coming-soon-eyebrow {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.25);
+
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s forwards;
+}
+
+.coming-soon-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: var(--font-weight-black);
+    letter-spacing: -0.025em;
+    line-height: var(--line-height-tight);
+    color: #ffffff;
+
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.3s forwards;
+}
+
+.coming-soon-description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: rgba(255, 255, 255, 0.4);
+    max-width: 400px;
+
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.4s forwards;
+}
+
+/* Progress bar — visual hint that this is in-progress, not abandoned */
+.coming-soon-progress {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+}
+
+.coming-soon-progress__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coming-soon-progress__label {
+    font-size: var(--font-size-xs);
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: var(--font-weight-medium);
+}
+
+.coming-soon-progress__pct {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.coming-soon-progress__bar {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.coming-soon-progress__fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    background: linear-gradient(90deg, rgba(255,255,255,0.3), rgba(255,255,255,0.7));
+    transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 0;
+}
+
+.coming-soon-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    justify-content: center;
+
+    opacity: 0;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.6s forwards;
+}
+
+/* Alternative WA CTA for coming-soon pages */
+.btn--wa-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: 14px var(--space-2xl);
+    border-radius: var(--radius-full);
+    background: transparent;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition: all var(--transition-fast);
+    font-family: var(--font-family);
+}
+
+.btn--wa-outline:hover {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.04);
+}

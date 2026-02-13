@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Programa B2B Phone Store Maracaibo — Importa iPhones directamente desde Miami para tu negocio. Precios mayoristas, asesoría personalizada y logística garantizada.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Venta Directa Miami | Phone Store Maracaibo B2B">
+    <meta property="og:description" content="Importa tecnología Apple directamente desde nuestra oficina en Miami. Precios mayoristas para emprendedores.">
+    <meta property="og:image" content="img/logo-img-black.png">
+    <meta property="og:url" content="https://phonestoreca.com/b2b-miami.html">
+    <meta property="og:type" content="website">
+
+    <title>Venta Directa Miami | Phone Store Maracaibo</title>
+
+    <link rel="icon" type="image/png" href="img/logo-img-black.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Design system tokens (shared) -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- B2B-specific styles -->
+    <link rel="stylesheet" href="css/b2b-miami.css">
+</head>
+
+<body class="b2b-body">
+
+    <!-- --- Navigation (light) --- -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <div class="nav__logo">
+                <a href="index.html">
+                    <img src="img/logo-img-black.png" alt="Phone Store Maracaibo">
+                </a>
+            </div>
+
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html#hero" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="catalogo.html" class="nav__link">Catálogo</a></li>
+                <li class="nav__item"><a href="index.html#features" class="nav__link">Ventajas</a></li>
+                <li class="nav__item"><a href="b2b-miami.html" class="nav__link nav__link--active">Miami Direct</a></li>
+            </ul>
+
+            <div class="NavUserContainer">
+                <div class="nav__user__icons">
+                    <div class="nav__shop">
+                        <a href="#" class="nav__link" data-page-pending="cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                                    <path d="M1 2h4l3 12.4a2 2 0 0 0 2 1.6h9a2 2 0 0 0 2-1.6L23 6H6" />
+                                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="nav__user">
+                        <a href="#" class="nav__link" data-page-pending="login">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1" d="M19 21a7 7 0 1 0-14 0m7-10a4 4 0 1 1 0-8a4 4 0 0 1 0 8" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- --- Hero B2B --- -->
+    <header class="b2b-hero" id="b2b-hero">
+        <div class="container">
+            <div class="b2b-hero__layout">
+
+                <!-- Text column -->
+                <div class="b2b-hero__text">
+                    <span class="b2b-hero__eyebrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.381 0-2.5-1.119-2.5-2.5S10.619 6.5 12 6.5s2.5 1.119 2.5 2.5-1.119 2.5-2.5 2.5z"/>
+                        </svg>
+                        5585 NW 72nd Ave, Miami, FL 33195
+                    </span>
+
+                    <h1 class="b2b-hero__title">
+                        Importa directo.<br>
+                        <span class="b2b-hero__title-outline">Sin intermediarios.</span>
+                    </h1>
+
+                    <p class="b2b-hero__description">
+                        Accede a precios mayoristas de iPhones y accesorios Apple directamente desde
+                        nuestra oficina en Miami. Programa diseñado para revendedores, distribuidores
+                        y emprendedores con visión.
+                    </p>
+
+                    <div class="b2b-hero__ctas">
+                        <a href="#b2b-form" class="btn btn--primary btn--large b2b-hero__cta-primary">
+                            <p>Solicitar acceso B2B</p>
+                            <svg class="btn__icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa el programa B2B Miami de Phone Store"
+                            target="_blank" class="btn btn--secondary btn--large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <p>Hablar ahora</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Stats column -->
+                <div class="b2b-hero__metrics">
+                    <div class="b2b-metric">
+                        <span class="b2b-metric__value">20+</span>
+                        <span class="b2b-metric__label">Años en el mercado</span>
+                    </div>
+                    <div class="b2b-metric">
+                        <span class="b2b-metric__value">Miami</span>
+                        <span class="b2b-metric__label">Oficina propia</span>
+                    </div>
+                    <div class="b2b-metric">
+                        <span class="b2b-metric__value">0</span>
+                        <span class="b2b-metric__label">Intermediarios</span>
+                    </div>
+                    <div class="b2b-metric">
+                        <span class="b2b-metric__value">24h</span>
+                        <span class="b2b-metric__label">Respuesta garantizada</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Decorative grid lines -->
+        <div class="b2b-hero__grid-deco" aria-hidden="true"></div>
+    </header>
+
+    <!-- --- Benefits: Proposición de valor --- -->
+    <section class="b2b-benefits" id="b2b-benefits">
+        <div class="container">
+            <div class="b2b-section-header">
+                <span class="b2b-eyebrow">¿Por qué importar con PSM?</span>
+                <h2 class="b2b-section-title">La ventaja de tener<br>una oficina en Florida.</h2>
+            </div>
+
+            <div class="b2b-benefits__grid">
+
+                <div class="b2b-benefit-card b2b-benefit-card--featured">
+                    <div class="b2b-benefit-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/>
+                            <circle cx="12" cy="9" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="b2b-benefit-card__title">Origen garantizado</h3>
+                    <p class="b2b-benefit-card__text">
+                        Compramos directamente en Apple Stores y distribuidores autorizados de Miami.
+                        Cada equipo tiene factura de origen USA rastreable.
+                    </p>
+                    <div class="b2b-benefit-card__tag">Apple Authorized Supply</div>
+                </div>
+
+                <div class="b2b-benefit-card">
+                    <div class="b2b-benefit-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                            <line x1="1" y1="10" x2="23" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="b2b-benefit-card__title">Precios mayoristas</h3>
+                    <p class="b2b-benefit-card__text">
+                        Volumen mínimo negociable. Accede a precios que no encontrarás en retail.
+                        Zelle, Binance y efectivo USD aceptados.
+                    </p>
+                </div>
+
+                <div class="b2b-benefit-card">
+                    <div class="b2b-benefit-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/>
+                            <circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="b2b-benefit-card__title">Logística coordinada</h3>
+                    <p class="b2b-benefit-card__text">
+                        Trabajamos con AMERICARGO y MRW USA. Coordinamos el envío completo
+                        desde Miami hasta tu puerta en Venezuela.
+                    </p>
+                </div>
+
+                <div class="b2b-benefit-card">
+                    <div class="b2b-benefit-card__icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="b2b-benefit-card__title">Respaldo de 20 años</h3>
+                    <p class="b2b-benefit-card__text">
+                        No somos un intermediario que apareció ayer. Dos décadas de reputación
+                        en Maracaibo respaldan cada transacción.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Process: Cómo funciona --- -->
+    <section class="b2b-process" id="b2b-process">
+        <div class="container">
+            <div class="b2b-section-header">
+                <span class="b2b-eyebrow">Proceso</span>
+                <h2 class="b2b-section-title">Tu pedido desde Miami<br>en tres pasos.</h2>
+            </div>
+
+            <div class="b2b-process__steps">
+
+                <div class="b2b-step">
+                    <div class="b2b-step__number">01</div>
+                    <div class="b2b-step__content">
+                        <h3 class="b2b-step__title">Solicitud y cotización</h3>
+                        <p class="b2b-step__text">
+                            Completa el formulario con los modelos, cantidades y storage deseados.
+                            Te respondemos en menos de 24 horas con disponibilidad y precio final en USD.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="b2b-step__connector" aria-hidden="true"></div>
+
+                <div class="b2b-step">
+                    <div class="b2b-step__number">02</div>
+                    <div class="b2b-step__content">
+                        <h3 class="b2b-step__title">Pago y confirmación</h3>
+                        <p class="b2b-step__text">
+                            Zelle, Binance P2P o efectivo USD. Una vez confirmado el pago
+                            compramos los equipos en Miami ese mismo día.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="b2b-step__connector" aria-hidden="true"></div>
+
+                <div class="b2b-step">
+                    <div class="b2b-step__number">03</div>
+                    <div class="b2b-step__content">
+                        <h3 class="b2b-step__title">Envío y entrega</h3>
+                        <p class="b2b-step__text">
+                            Coordinamos con AMERICARGO o MRW USA según tu preferencia.
+                            Seguimiento en tiempo real hasta la entrega en Maracaibo.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Couriers: Logística --- -->
+    <section class="b2b-couriers" id="b2b-couriers">
+        <div class="container">
+            <div class="b2b-couriers__inner">
+                <p class="b2b-couriers__label">Couriers de confianza</p>
+                <div class="b2b-couriers__list">
+                    <div class="b2b-courier-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                        AMERICARGO
+                    </div>
+                    <div class="b2b-courier-badge">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="1" y="3" width="15" height="13"/>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                            <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                        </svg>
+                        MRW USA
+                    </div>
+                    <div class="b2b-courier-badge b2b-courier-badge--muted">
+                        + Couriers personalizados a solicitud
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- B2B Form --- -->
+    <section class="b2b-form-section" id="b2b-form">
+        <div class="container">
+            <div class="b2b-form-layout">
+
+                <!-- Form column -->
+                <div class="b2b-form-col">
+                    <div class="b2b-section-header b2b-section-header--left">
+                        <span class="b2b-eyebrow">Solicitud de acceso</span>
+                        <h2 class="b2b-section-title b2b-section-title--left">Cuéntanos<br>qué necesitas.</h2>
+                        <p class="b2b-form__subtitle">
+                            Completa el formulario y generamos un mensaje de WhatsApp con toda
+                            la información preformateada para nuestro equipo en Miami.
+                        </p>
+                    </div>
+
+                    <form class="b2b-form" id="b2b-inquiry-form" novalidate>
+
+                        <div class="b2b-form__row">
+                            <div class="b2b-form__group">
+                                <label class="b2b-form__label" for="field-name">Nombre completo *</label>
+                                <input
+                                    type="text"
+                                    id="field-name"
+                                    name="name"
+                                    class="b2b-form__input"
+                                    placeholder="Tu nombre"
+                                    autocomplete="name"
+                                    required
+                                >
+                                <span class="b2b-form__error" id="error-name"></span>
+                            </div>
+                            <div class="b2b-form__group">
+                                <label class="b2b-form__label" for="field-business">Negocio o empresa *</label>
+                                <input
+                                    type="text"
+                                    id="field-business"
+                                    name="business"
+                                    class="b2b-form__input"
+                                    placeholder="Nombre de tu negocio"
+                                    required
+                                >
+                                <span class="b2b-form__error" id="error-business"></span>
+                            </div>
+                        </div>
+
+                        <div class="b2b-form__group">
+                            <label class="b2b-form__label" for="field-products">Productos de interés *</label>
+                            <input
+                                type="text"
+                                id="field-products"
+                                name="products"
+                                class="b2b-form__input"
+                                placeholder="Ej: 10x iPhone 16 128GB, 5x iPhone 15 Pro 256GB"
+                                required
+                            >
+                            <span class="b2b-form__hint">Modelos, cantidades y storage deseado</span>
+                            <span class="b2b-form__error" id="error-products"></span>
+                        </div>
+
+                        <div class="b2b-form__row">
+                            <div class="b2b-form__group">
+                                <label class="b2b-form__label" for="field-volume">Volumen estimado</label>
+                                <select id="field-volume" name="volume" class="b2b-form__select">
+                                    <option value="">Seleccionar</option>
+                                    <option value="1-5 unidades">1 – 5 unidades</option>
+                                    <option value="6-15 unidades">6 – 15 unidades</option>
+                                    <option value="16-30 unidades">16 – 30 unidades</option>
+                                    <option value="30+ unidades">30+ unidades</option>
+                                </select>
+                            </div>
+                            <div class="b2b-form__group">
+                                <label class="b2b-form__label" for="field-payment">Método de pago preferido</label>
+                                <select id="field-payment" name="payment" class="b2b-form__select">
+                                    <option value="">Seleccionar</option>
+                                    <option value="Zelle">Zelle</option>
+                                    <option value="Binance P2P">Binance P2P</option>
+                                    <option value="Efectivo USD">Efectivo USD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="b2b-form__group">
+                            <label class="b2b-form__label" for="field-message">Comentarios adicionales</label>
+                            <textarea
+                                id="field-message"
+                                name="message"
+                                class="b2b-form__textarea"
+                                placeholder="Courier preferido, urgencia, preguntas específicas..."
+                                rows="4"
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary btn--large b2b-form__submit" id="form-submit-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>Enviar solicitud por WhatsApp</span>
+                        </button>
+
+                    </form>
+                </div>
+
+                <!-- Info column -->
+                <div class="b2b-contact-col">
+                    <div class="b2b-contact-card">
+                        <h3 class="b2b-contact-card__title">Contacto directo</h3>
+                        <p class="b2b-contact-card__subtitle">¿Prefieres hablar primero? Sin problema.</p>
+
+                        <div class="b2b-contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            <div>
+                                <span class="b2b-contact-item__label">Maracaibo, Venezuela</span>
+                                <a href="tel:+584146395496" class="b2b-contact-item__value">+58 414-6395496</a>
+                            </div>
+                        </div>
+
+                        <div class="b2b-contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <div>
+                                <span class="b2b-contact-item__label">Oficina Miami</span>
+                                <span class="b2b-contact-item__value">5585 NW 72nd Ave, FL 33195</span>
+                            </div>
+                        </div>
+
+                        <div class="b2b-contact-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <div>
+                                <span class="b2b-contact-item__label">Email</span>
+                                <a href="mailto:admin@phonestoreca.com" class="b2b-contact-item__value">admin@phonestoreca.com</a>
+                            </div>
+                        </div>
+
+                        <div class="b2b-contact-hours">
+                            <p class="b2b-contact-hours__title">Horario de atención</p>
+                            <p class="b2b-contact-hours__schedule">Lun – Sáb: 9:00am – 6:00pm</p>
+                            <p class="b2b-contact-hours__schedule">Domingo: Cerrado</p>
+                        </div>
+
+                        <a href="https://wa.me/584146395496?text=Hola, me interesa el programa B2B Miami de Phone Store"
+                            target="_blank" class="btn btn--primary b2b-contact-card__whatsapp">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            </svg>
+                            <span>Escribir ahora</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Footer --- -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="img/logo-img-black.png" alt="Phone Store Maracaibo">
+                    </div>
+                    <p class="footer__tagline">20 años importando tecnología premium desde Miami</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4 class="footer__title">Productos</h4>
+                        <ul class="footer__list">
+                            <li><a href="catalogo.html" class="footer__link">iPhone Nuevos</a></li>
+                            <li><a href="catalogo.html?filter=certificado" class="footer__link">iPhone Certificados</a></li>
+                            <li><a href="catalogo.html?filter=accesorio" class="footer__link">Accesorios</a></li>
+                            <li><a href="catalogo.html?filter=repuesto" class="footer__link">Repuestos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Servicios</h4>
+                        <ul class="footer__list">
+                            <li><a href="b2b-miami.html" class="footer__link">Venta Directa Miami</a></li>
+                            <li><a href="index.html#services" class="footer__link">Trade-In</a></li>
+                            <li><a href="index.html#services" class="footer__link">Garantía</a></li>
+                            <li><a href="index.html#services" class="footer__link">Envíos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__title">Contacto</h4>
+                        <ul class="footer__list">
+                            <li><a href="tel:+584146395496" class="footer__link">+58 414-6395496</a></li>
+                            <li><a href="mailto:admin@phonestoreca.com" class="footer__link">admin@phonestoreca.com</a></li>
+                            <li><a href="index.html#contact" class="footer__link">Maracaibo, Venezuela</a></li>
+                            <li><a href="b2b-miami.html" class="footer__link">Miami, FL 33195</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Phone Store Maracaibo. Todos los derechos reservados.</p>
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/phonestoremaracaibo_/" target="_blank"
+                        class="footer__social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/b2b-miami.js"></script>
+
+</body>
+</html>
